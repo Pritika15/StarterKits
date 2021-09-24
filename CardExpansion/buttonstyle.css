@@ -1,0 +1,82 @@
+.button{
+    height:70px;
+    width:300px;
+    background:#ecf0f1;
+    margin:auto auto;
+    position:relative;
+    top:50%;
+    transform:translate(0%,-50%);
+    color:#333;
+    text-align:center;
+    line-height:70px;
+    font-size:30px;
+    font-family: 'Lato', sans-serif;
+    cursor:pointer;
+    transition:all .3s ease-in 1.2s;
+  }
+  
+  .button:hover{
+    background:transparent;
+    color:#fff;
+    transition:all .3s ease-in;
+  }
+  
+  .bot-bar{
+    position:absolute;
+    bottom:0px;
+    height:2px; 
+    width:0%;
+    left:0px;
+    background:#fff;
+    transition:all .4s ease .8s;
+  }
+  
+  .top-bar{
+    height:2px;
+    width:0%;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background:#fff;
+    transition: all .4s ease .2s;
+  }
+  
+  .left-bar{
+    height:0%;
+    width:2px;
+    background:#fff;
+    position:absolute;
+    left:0px;
+    top:0px;
+    transition:all .2s ease;
+  }
+  
+  .right-bar{
+    height:0%;
+    width:2px;
+    background:#fff;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    transition:all .2s ease .6s;
+  }
+  
+  .button:hover .bot-bar{
+    width:100%;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button:hover .top-bar{
+    width:100%;
+    transition: all .4s ease-in-out .6s;
+  }
+  
+  .button:hover .right-bar{
+    height:100%;
+    transition:all .2s ease-in-out .4s;
+  }
+  
+  .button:hover .left-bar{
+    height:100%;
+    transition:all .2s ease-in-out 1s;
+  }
